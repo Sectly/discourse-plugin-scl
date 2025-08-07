@@ -93,6 +93,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
   rubocop-discourse
