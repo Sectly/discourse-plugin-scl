@@ -3,13 +3,17 @@ import { later } from "@ember/runloop";
 export default {
     name: "scl-embed",
     initialize() {
+        const debugMode = false;
+
+        if (debugMode) console.log("SCL Embed Initializer Loading...");
+
         function sclEmbed() {
-            console.log("SCL Embed Processing...");
+            if (debugMode) console.log("SCL Embed Processing...");
 
             const oneboxes = document.querySelectorAll(".cooked .onebox.allowlistedgeneric");
 
             if (!oneboxes || oneboxes.length === 0) {
-                console.log("No oneboxes found for SCL Embed, Stopped processing!");
+                if (debugMode) console.log("No oneboxes found for SCL Embed, Stopped processing!");
 
                 return;
             }
@@ -48,7 +52,7 @@ export default {
                 }
             });
 
-            console.log("SCL Embed Processing Completed!");
+            if (debugMode) console.log("SCL Embed Processing Completed!");
         }
 
         function loop() {
@@ -73,5 +77,7 @@ export default {
         sclEmbed();
 
         loop();
+
+        if (debugMode) console.log("SCL Embed Initializer Loaded!");
     },
 };
