@@ -51,6 +51,13 @@ export default {
             console.log("SCL Embed Processing Completed!");
         }
 
+        function loop() {
+            sclEmbed();
+
+            // Repeat every 1.5 seconds
+            setTimeout(loop, 1500);
+        }
+
         window.addEventListener("onebox:loaded", () => {
             sclEmbed();
         });
@@ -64,5 +71,7 @@ export default {
         }, 3000);
 
         sclEmbed();
+
+        loop();
     },
 };
