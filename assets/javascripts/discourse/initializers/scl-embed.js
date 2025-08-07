@@ -1,9 +1,13 @@
 export default {
     name: "scl-embed",
     initialize() {
+        console.log("SCL Embed Processing...");
+
         const oneboxes = document.querySelectorAll(".cooked .onebox.allowlistedgeneric");
 
         if (!oneboxes || oneboxes.length === 0) {
+            console.log("No oneboxes found for SCL Embed, Stopped processing!");
+
             return;
         }
 
@@ -32,5 +36,7 @@ export default {
                 }
             }
         });
+
+        console.log("SCL Embed Processing Completed!");
     },
 };
