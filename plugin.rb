@@ -18,4 +18,6 @@ require_relative "lib/my_plugin_module/engine"
 
 after_initialize do
   # This does nothing, keeping it here encase we need to add something later
+  
+  # See: https://meta.discourse.org/t/-/30515?silent=true
 end
