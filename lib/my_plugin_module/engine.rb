@@ -14,7 +14,7 @@ module ::MyPluginModule
   class Onebox::Engine::MyPluginModule
     include Onebox::Engine
     # Try to match the URL to the plugin's domain and ensure it contains 'job'
-    matches_regexp /(?=.*strakscargo\.ltd)(?=.*\bjob\b)/i
+    matches_regexp /(?=.*strakscargo\.ltd)(?=.*job)/i
 
     # Embed the URL in an iframe
     def to_html
