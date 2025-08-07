@@ -4,7 +4,7 @@
 # about: A discourse plugin for Straks Cargo Ltd forum: https://forum.strakscargo.ltd/
 # meta_topic_id: TODO
 # version: 0.0.1
-# authors: Discourse
+# authors: Sectly
 # url: https://github.com/Sectly/discourse-plugin-scl
 # required_version: 2.7.0
 
