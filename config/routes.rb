@@ -5,4 +5,4 @@ SCLPlugin::Engine.routes.draw do
   # define routes here
 end
 
-Discourse::Application.routes.draw { mount ::SCLPlugin::Engine, at: "scl" }
+Discourse::Application.routes.draw { mount ::SCLPlugin::Engine, at: "my-plugin" }
