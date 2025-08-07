@@ -1,5 +1,5 @@
-# **Plugin Name** Plugin
+# **discourse-plugin-scl** Plugin
 
 **Plugin Summary**
 
-For more information, please see: **url to meta topic**
+A discourse plugin for Straks Cargo Ltd forum: https://forum.strakscargo.ltd/
