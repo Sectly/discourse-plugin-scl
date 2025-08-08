@@ -33,24 +33,7 @@ export default {
                     if (headerLink) {
                         const url = headerLink.href;
 
-                        // Fetch the target page to get its title
-                        fetch(url)
-                            .then(response => response.text())
-                            .then(html => {
-                                const parser = new DOMParser();
-                                const doc = parser.parseFromString(html, "text/html");
-
-                                // Try meta[name=title], then <title>
-                                let pageTitle =
-                                    doc.querySelector('meta[name="title"]')?.getAttribute("content") ||
-                                    doc.querySelector("title")?.innerText ||
-                                    headerLink.textContent;
-
-                                headerLink.textContent = pageTitle;
-                            })
-                            .catch(err => {
-                                if (debugMode) console.error("Error fetching title:", err);
-                            });
+                        headerLink.textContent = `Straks Cargo Ltd (${headerLink.textContent})`;
 
                         // Generate the iframe HTML with the given URL
                         const iframeHTML = `
