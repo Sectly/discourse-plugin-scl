@@ -39,7 +39,7 @@ export default {
                         const iframeHTML = `
           <iframe name='embed_readwrite' src='${url}?discourse=true&embed=true' style='border-width:0' frameborder='0' scrolling='no' width='100%' height='600'></iframe>
           <br>
-          <a href='${url}?discourse=true' target='_blank'>Open in a new tab</a>
+          <!-- <a href='${url}?discourse=true' target='_blank'>Open in a new tab</a> -->
         `;
 
                         // Find and replace the onebox-body content
