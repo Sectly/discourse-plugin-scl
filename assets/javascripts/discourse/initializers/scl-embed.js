@@ -37,7 +37,7 @@ export default {
 
                         // Generate the iframe HTML with the given URL
                         const iframeHTML = `
-          <iframe name='embed_readwrite' src='${url}?discourse=true&embed=true' style='border-width:0; overflow:auto;' frameborder='0' scrolling='no' width='100%' height='600'></iframe>
+          <iframe name='embed_readwrite' src='${url}?discourse=true&embed=true' style='border: none; width: 100%; height: 600px; overflow-y: scroll;' frameborder='0' scrolling='yes' width='100%' height='600'></iframe>
           <br>
           <!-- <a href='${url}?discourse=true' target='_blank'>Open in a new tab</a> -->
         `;
